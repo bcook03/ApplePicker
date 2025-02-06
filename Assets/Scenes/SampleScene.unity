@@ -491,17 +491,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6645085562035795549, guid: 1d02726c3f8676f4186c61d28768ed29, type: 3}
-      propertyPath: applePrefab
-      value: 
-      objectReference: {fileID: 7970125652641438828, guid: a133cc2318af80241b32af69df556cb7, type: 3}
     - target: {fileID: 7444282717596628396, guid: 1d02726c3f8676f4186c61d28768ed29, type: 3}
       propertyPath: m_Name
       value: AppleTree
-      objectReference: {fileID: 0}
-    - target: {fileID: 8000865182245765222, guid: 1d02726c3f8676f4186c61d28768ed29, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
