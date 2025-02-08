@@ -8,7 +8,7 @@ public class ApplePicker : MonoBehaviour
     [Header("Inscribed")]
     public GameObject basketPrefab;
     public int numBaskets = 4;
-    public float basketBottomY = -14f;
+    public float basketBottomY = -12f;
     public float basketSpacingY = 2f;
     public List<GameObject> basketList;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
