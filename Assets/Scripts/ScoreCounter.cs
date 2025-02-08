@@ -15,7 +15,7 @@ public class ScoreCounter : MonoBehaviour
     {
         uiText = GetComponent<TextMeshProUGUI>();
         if (uiText == null) {
-            Debug.LogError("Text componet not found on " + gameObject.name);
+            Debug.LogError("Text component not found on " + gameObject.name);
         }
     }
 

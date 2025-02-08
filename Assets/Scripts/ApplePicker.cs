@@ -11,9 +11,13 @@ public class ApplePicker : MonoBehaviour
     public float basketBottomY = -14f;
     public float basketSpacingY = 2f;
     public List<GameObject> basketList;
+
+    public RoundCounter roundCounter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GameObject roundCounterGO = GameObject.Find("RoundCounter");
+        roundCounter = roundCounterGO.GetComponent<RoundCounter>();
         basketList = new List<GameObject>();
         for (int i = 0; i < numBaskets; i++) {
             GameObject tbasketGO = Instantiate<GameObject>(basketPrefab);
@@ -40,9 +44,14 @@ public class ApplePicker : MonoBehaviour
         basketList.RemoveAt(basketIndex);
         Destroy(basketGO);
 
+        // Next Round
+        roundCounter.round++;
+
         // If there are no Baskets left, restart the game
         if (basketList.Count == 0) {
-            SceneManager.LoadScene("SampleScene");
+            roundCounter.round = 1;
+            SceneManager.UnloadSceneAsync("GameScene");
+            SceneManager.LoadScene("StartScreen");
         }
     }
 }
