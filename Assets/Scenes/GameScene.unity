@@ -1126,6 +1126,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6645085562035795549, guid: 1d02726c3f8676f4186c61d28768ed29, type: 3}
+      propertyPath: branchPrefab
+      value: 
+      objectReference: {fileID: 6901218087560489642, guid: a1261c718af98884ebda01941259d5e0, type: 3}
     - target: {fileID: 7444282717596628396, guid: 1d02726c3f8676f4186c61d28768ed29, type: 3}
       propertyPath: m_Name
       value: AppleTree

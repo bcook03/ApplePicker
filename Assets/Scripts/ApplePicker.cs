@@ -33,6 +33,10 @@ public class ApplePicker : MonoBehaviour
         foreach (GameObject tempGO in appleArray) {
             Destroy(tempGO);
         }
+        GameObject[] branchArray = GameObject.FindGameObjectsWithTag("Branch");
+        foreach (GameObject tempGO in branchArray) {
+            Destroy(tempGO);
+        }
 
         // Destroy one of the Baskets
         // Get the index of the last Basket in basketlist
