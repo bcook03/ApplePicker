@@ -274,6 +274,7 @@ MonoBehaviour:
   basketBottomY: -14
   basketSpacingY: 2
   basketList: []
+  roundCounter: {fileID: 0}
 --- !u!1 &347438956
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   round: 1
-  maxRounds: 4
 --- !u!1 &372097544
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartScene : MonoBehaviour
+public class GameOverScene : MonoBehaviour
 {
-    public void StartGame() {
+    public void RestartGame() {
         SceneManager.LoadScene(1);
     }
-
 }

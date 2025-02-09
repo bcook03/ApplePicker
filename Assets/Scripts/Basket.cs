@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Basket : MonoBehaviour
 {
@@ -43,6 +44,10 @@ public class Basket : MonoBehaviour
             Destroy( collidedWith );
             scoreCounter.score += 100;
             HighScore.TRY_SET_HIGH_SCORE( scoreCounter.score );
+        }
+        if (collidedWith.CompareTag("Branch")) {
+            Destroy(collidedWith);
+            SceneManager.LoadScene(2);
         }
     }
 }
