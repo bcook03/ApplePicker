@@ -22,7 +22,7 @@ public class AppleTree : MonoBehaviour
     // Seconds between Apples instantiations
     public float appleDropDelay = 2f;
     // Seconds between Branch instantiations
-    public float branchDropDelay = 14.5f;
+    public float branchDropDelay = 24.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
