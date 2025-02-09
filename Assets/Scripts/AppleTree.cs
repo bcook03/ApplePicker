@@ -22,13 +22,13 @@ public class AppleTree : MonoBehaviour
     // Seconds between Apples instantiations
     public float appleDropDelay = 2f;
     // Seconds between Branch instantiations
-    public float branchDropDelay = 14f;
+    public float branchDropDelay = 14.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         // Start dropping apples
         Invoke("DropApple", 2f);
-        Invoke("DropBranch", 10f);
+        Invoke("DropBranch", 10.5f);
     }
     void DropApple() {
         GameObject apple = Instantiate<GameObject>(applePrefab);
